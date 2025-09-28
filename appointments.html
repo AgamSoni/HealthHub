@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthHub - Appointments</title>
+  <link rel="icon" type="image/png" href="HealthHub.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Top Bar -->
+  <div class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-3">
+        <img src="HealthHub.png" alt="HealthHub Logo" class="w-10 h-10" />
+        <h1 class="text-xl font-bold text-gray-800">HealthHub</h1>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-sm text-gray-600">Welcome, Ava</span>
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-8 h-8 rounded-full object-cover" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="bg-blue-600 text-white shadow-sm">
+    <div class="max-w-7xl mx-auto flex gap-6 p-3 text-sm font-medium">
+      <a href="index.html" class="hover:text-gray-200">Dashboard</a>
+      <a href="appointments.html" class="underline">Appointments</a>
+      <a href="settings.html" class="hover:text-gray-200">Settings</a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-7xl mx-auto p-6 space-y-6">
+    <!-- Upcoming -->
+    <section class="bg-white p-6 rounded-2xl shadow-sm">
+      <h3 class="text-lg font-semibold mb-4">Upcoming Appointments</h3>
+      <div class="divide-y">
+        <div class="py-4 flex justify-between items-center">
+          <div>
+            <div class="text-sm font-medium">Oct 2, 2025 • 07:00 PM</div>
+            <div class="text-xs text-gray-500">Dr. Nina Alvarez — Video Consult</div>
+            <div class="text-xs text-gray-600 mt-1">Reason: 6-month hypertension follow-up</div>
+          </div>
+          <button class="px-3 py-1 bg-green-600 text-white text-xs rounded-lg hover:bg-green-700">Join</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past -->
+    <section class="bg-white p-6 rounded-2xl shadow-sm">
+      <h3 class="text-lg font-semibold mb-4">Past Visits</h3>
+      <div class="divide-y">
+        <div class="py-4">
+          <div class="flex justify-between items-center">
+            <div>
+              <div class="text-sm font-medium">Jul 21, 2025</div>
+              <div class="text-xs text-gray-500">Dr. Priya Kaur — Virtual Clinic</div>
+            </div>
+            <div class="text-xs text-gray-400">Hypertension, Medication management</div>
+          </div>
+          <ul class="list-disc list-inside mt-2 text-sm text-gray-700">
+            <li>Follow-up on hypertension: meds adjusted.</li>
+            <li>Discussed lifestyle modifications.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
