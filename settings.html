@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthHub - Settings</title>
+  <link rel="icon" type="image/png" href="HealthHub.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Top Bar -->
+  <div class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-3">
+        <img src="HealthHub.png" alt="HealthHub Logo" class="w-10 h-10" />
+        <h1 class="text-xl font-bold text-gray-800">HealthHub</h1>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-sm text-gray-600">Welcome, Ava</span>
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-8 h-8 rounded-full object-cover" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="bg-blue-600 text-white shadow-sm">
+    <div class="max-w-7xl mx-auto flex gap-6 p-3 text-sm font-medium">
+      <a href="index.html" class="hover:text-gray-200">Dashboard</a>
+      <a href="appointments.html" class="hover:text-gray-200">Appointments</a>
+      <a href="settings.html" class="underline">Settings</a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-2xl mx-auto p-6">
+    <section class="bg-white p-6 rounded-2xl shadow-sm">
+      <h3 class="text-lg font-semibold mb-4">Update Profile</h3>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium">Date of Birth</label>
+          <input type="date" class="mt-1 w-full border rounded-lg p-2 text-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Health Card Number</label>
+          <input type="text" placeholder="HN-XXXX-XXXX" class="mt-1 w-full border rounded-lg p-2 text-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Phone</label>
+          <input type="tel" placeholder="+1 (416) 555-0123" class="mt-1 w-full border rounded-lg p-2 text-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input type="email" placeholder="ava.martinez@example.com" class="mt-1 w-full border rounded-lg p-2 text-sm" />
+        </div>
+        <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          Save Changes
+        </button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
