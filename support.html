@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthHub - Support</title>
+  <link rel="icon" type="image/png" href="HealthHub.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Top Bar -->
+  <div class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-3">
+        <img src="HealthHub.png" alt="HealthHub Logo" class="w-10 h-10" />
+        <h1 class="text-xl font-bold text-gray-800">HealthHub</h1>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-sm text-gray-600">Welcome, Ava</span>
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-8 h-8 rounded-full object-cover" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="bg-blue-600 text-white shadow-sm">
+    <div class="max-w-7xl mx-auto flex gap-6 p-3 text-sm font-medium">
+      <a href="index.html" class="hover:text-gray-200">Dashboard</a>
+      <a href="appointments.html" class="hover:text-gray-200">Appointments</a>
+      <a href="settings.html" class="hover:text-gray-200">Settings</a>
+      <a href="support.html" class="underline">Support</a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-3xl mx-auto p-6">
+    <section class="bg-white p-6 rounded-2xl shadow-sm">
+      <h3 class="text-lg font-semibold mb-4">Frequently Asked Questions</h3>
+
+      <!-- FAQ Accordion -->
+      <div class="space-y-4">
+        <div>
+          <button onclick="toggleFAQ(1)" class="w-full flex justify-between items-center p-3 bg-gray-50 border rounded-lg text-left">
+            <span>💻 How do I join a video consultation?</span>
+            <span id="icon-1">+</span>
+          </button>
+          <div id="faq-1" class="hidden p-3 text-sm text-gray-600">
+            From the <strong>Appointments</strong> page, click the <em>Join</em> button next to your scheduled appointment. Make sure your camera and microphone are enabled.
+          </div>
+        </div>
+
+        <div>
+          <button onclick="toggleFAQ(2)" class="w-full flex justify-between items-center p-3 bg-gray-50 border rounded-lg text-left">
+            <span>🔑 I forgot my password. What should I do?</span>
+            <span id="icon-2">+</span>
+          </button>
+          <div id="faq-2" class="hidden p-3 text-sm text-gray-600">
+            Click on the <strong>Forgot Password</strong> link on the login page. Follow the instructions to reset your password using your registered email.
+          </div>
+        </div>
+
+        <div>
+          <button onclick="toggleFAQ(3)" class="w-full flex justify-between items-center p-3 bg-gray-50 border rounded-lg text-left">
+            <span>📱 Can I use HealthHub on my phone?</span>
+            <span id="icon-3">+</span>
+          </button>
+          <div id="faq-3" class="hidden p-3 text-sm text-gray-600">
+            Yes! HealthHub is mobile-friendly and works in your phone’s browser. We recommend Chrome or Safari for the best experience.
+          </div>
+        </div>
+
+        <div>
+          <button onclick="toggleFAQ(4)" class="w-full flex justify-between items-center p-3 bg-gray-50 border rounded-lg text-left">
+            <span>📧 How do I contact support?</span>
+            <span id="icon-4">+</span>
+          </button>
+          <div id="faq-4" class="hidden p-3 text-sm text-gray-600">
+            You can reach us at <a href="mailto:support@healthhub.com" class="text-blue-600 underline">support@healthhub.com</a> or call <strong>+1 (800) 555-0199</strong>.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- JS for FAQ toggle -->
+  <script>
+    function toggleFAQ(id) {
+      const answer = document.getElementById("faq-" + id);
+      const icon = document.getElementById("icon-" + id);
+
+      if (answer.classList.contains("hidden")) {
+        answer.classList.remove("hidden");
+        icon.textContent = "-";
+      } else {
+        answer.classList.add("hidden");
+        icon.textContent = "+";
+      }
+    }
+  </script>
+</body>
+</html>
